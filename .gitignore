@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# R / RStudio
+.Rhistory
+.Rapp.history
+.RData
+.Rproj.user
+*.Rproj
+Rplots.pdf
+
+# Data products — never in the code repo; all outputs live on the shared volume
+*.rds
+*.rda
+*.xlsx
+*.xls
+*.tsv.gz
+*.vcf
+*.vcf.gz
+*.bed
+*.bim
+*.fam
+*.bgen
+*.snpRes
+*.sscore
+outputs/
+output/
+logs/
+*.log
+data/
+sensitivity/
+
+# Pipeline runtime state — auto-appended by run_pipeline.sh on Tardis;
+# the canonical copy lives there, not in git.
+**/decision_log.md
+# Mac-side defensive backups created by sed -i during pipeline edits
+**/*.bak*
+# Per-run state markers
+transfer_geno.completed
+transfer_geno_workbench.completed
+
+# Per-user, per-machine settings (Tardis username, project root, bin/LD-ref
+# locations, local analysis-project path). Written by _bootstrap_user_config.sh
+# on first run. Template lives at user_config.sh.example.
+**/user_config.sh
+
+# Misc
+.env
+.venv/
+__pycache__/

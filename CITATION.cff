@@ -1,0 +1,117 @@
+cff-version: 1.2.0
+message: "If you use this analysis code, please cite it as below."
+title: "Analysis code for: Genomics of Educational Attainment Across 80 Years of Social and Political Transformation in Germany"
+abstract: "Analysis pipeline for a gene-by-environment study of educational attainment and intergenerational educational mobility across four German cohorts (BASE-II, SHIP, SOEP, TwinLife), covering individuals born between 1918 and 1995."
+type: software
+license: MIT
+version: "1.0-preprint"
+repository-code: "https://github.com/denizFraemke/GxE-education-germany"
+# ---------------------------------------------------------------------------
+# PLACEHOLDER — NO PREPRINT DOI HAS BEEN ISSUED YET.
+# The block below is deliberately commented out so that no invalid DOI can be
+# harvested from this file. When the preprint DOI exists, replace <DOI> with it
+# and uncomment the three lines.
+#
+# identifiers:
+#   - type: doi
+#     value: "<DOI>"
+# ---------------------------------------------------------------------------
+keywords:
+  - Education
+  - German Reunification
+  - Educational Disparities
+  - Polygenic Index
+  - Gene-environment interactions
+authors:
+  - given-names: Deniz
+    family-names: Fraemke
+    orcid: "https://orcid.org/0009-0007-3446-9367"
+  - given-names: A.
+    family-names: Miller
+    orcid: "https://orcid.org/0009-0004-1028-3443"
+  - given-names: P.
+    family-names: Koellinger
+    orcid: "https://orcid.org/0000-0001-7413-0412"
+  - given-names: R.
+    family-names: Hertwig
+    orcid: "https://orcid.org/0000-0002-9908-9556"
+  - given-names: D.
+    family-names: Richter
+    orcid: "https://orcid.org/0000-0003-2811-8652"
+  - given-names: S.
+    family-names: Zinn
+    orcid: "https://orcid.org/0000-0002-8093-086X"
+  - given-names: C.
+    family-names: Kandler
+    orcid: "https://orcid.org/0000-0002-9175-235X"
+  - given-names: A. J.
+    family-names: Forstner
+    orcid: "https://orcid.org/0000-0002-1876-6368"
+  - given-names: B.
+    family-names: Mönkediek
+    orcid: "https://orcid.org/0000-0003-4466-715X"
+  - given-names: M.
+    family-names: Diewald
+    orcid: "https://orcid.org/0000-0002-9101-1586"
+  - given-names: A.
+    family-names: Teumer
+    orcid: "https://orcid.org/0000-0002-8309-094X"
+  - given-names: S. E.
+    family-names: Baumeister
+    orcid: "https://orcid.org/0000-0002-9391-6602"
+  - given-names: H.
+    family-names: Völzke
+    orcid: "https://orcid.org/0000-0001-7003-399X"
+  - given-names: U.
+    family-names: Völker
+    orcid: "https://orcid.org/0000-0002-5689-3448"
+  - given-names: H. J.
+    family-names: Grabe
+    orcid: "https://orcid.org/0000-0003-3684-4208"
+  - given-names: L.
+    family-names: Bertram
+    orcid: "https://orcid.org/0000-0002-0108-124X"
+  - given-names: U.
+    family-names: Lindenberger
+    orcid: "https://orcid.org/0000-0001-8428-6453"
+  - given-names: J.
+    family-names: Drewelies
+    orcid: "https://orcid.org/0000-0002-3774-2169"
+  - given-names: S.
+    family-names: Kühn
+    orcid: "https://orcid.org/0000-0001-6823-7969"
+  - given-names: I.
+    family-names: Demuth
+    orcid: "https://orcid.org/0000-0002-4340-2523"
+  - given-names: D.
+    family-names: Gerstorf
+    orcid: "https://orcid.org/0000-0002-2133-9498"
+  - given-names: A.
+    family-names: Okbay
+    orcid: "https://orcid.org/0000-0002-5170-7781"
+  - given-names: P.
+    family-names: Biroli
+    orcid: "https://orcid.org/0000-0002-5033-4688"
+  - given-names: N.
+    family-names: Fuchs-Schündeln
+    orcid: "https://orcid.org/0000-0002-0941-0167"
+  - given-names: K. P.
+    family-names: Harden
+    orcid: "https://orcid.org/0000-0002-1557-6737"
+  - given-names: A.
+    family-names: Abdellaoui
+    orcid: "https://orcid.org/0000-0003-1088-6784"
+  - given-names: M.
+    family-names: Malanchini
+    orcid: "https://orcid.org/0000-0002-7257-6119"
+  - given-names: E. M.
+    family-names: Tucker-Drob
+    orcid: "https://orcid.org/0000-0001-5599-6237"
+  - given-names: Laurel
+    family-names: Raffington
+    orcid: "https://orcid.org/0000-0002-0144-5605"
+contact:
+  - given-names: Deniz
+    family-names: Fraemke
+    email: fraemke@mpib-berlin.mpg.de
+    orcid: "https://orcid.org/0009-0007-3446-9367"

@@ -1,0 +1,49 @@
+# user_config.sh.example
+# =============================================================================
+# Per-user, per-machine settings for the SNP-heritability pipeline.
+# =============================================================================
+#
+# To set up:
+#   cp user_config.sh.example user_config.sh
+#   $EDITOR user_config.sh
+#
+# Or just run any transfer_*.sh script — if user_config.sh is missing the
+# script walks you through an interactive setup that writes the file for you.
+#
+# user_config.sh is gitignored; your edits never leave your machine.
+# =============================================================================
+
+# --- Tardis SSH target ------------------------------------------------------
+# Your cluster login. SSH key-based auth is required (the transfer scripts
+# call ssh/rsync non-interactively). Verify with:
+#   ssh "${TARDIS_USER}@${TARDIS_HOST}" echo ok   # must not prompt for a password
+# If it does prompt, run `ssh-copy-id "${TARDIS_USER}@${TARDIS_HOST}"` first.
+export TARDIS_USER="your_cluster_username"
+export TARDIS_HOST="your.cluster.hostname"
+export TARDIS_SSH="${TARDIS_USER}@${TARDIS_HOST}"
+
+# --- Where THIS pipeline (SNP-heritability) lives on Tardis -----------------
+# Code, data, output, logs all live under this single root. Independent
+# of the genotype/PGI project — set up as a sibling on the same beegfs
+# filesystem.
+export TARDIS_PROJECT_ROOT="/path/to/cluster_project_root/h2_snp"
+
+# --- Where the upstream GENOTYPE pipeline lives on Tardis -------------------
+# We reuse the Phase-1 harmonized bfiles ({COHORT}_harmonized.{bed,bim,fam})
+# and the imputation info files staged there, rather than re-staging all five
+# cohorts' genotype data. This must point at the existing
+# 01_Genotype/Harmonized/ Tardis tree.
+export TARDIS_GENOTYPE_PROJECT_ROOT="/path/to/cluster_project_root/genotype"
+
+# --- Shared binaries on Tardis ---------------------------------------------
+# This pipeline needs gcta64 (GREML), plink (1.9; cohort merge), and
+# plink2 (variant extraction). config.sh expects:
+#   ${TARDIS_BIN_DIR}/gcta64
+#   ${TARDIS_BIN_DIR}/plink
+#   ${TARDIS_BIN_DIR}/plink2
+export TARDIS_BIN_DIR="/path/to/cluster_bin_dir"
+
+# --- Local Mac data root ----------------------------------------------------
+# Mirror of the shared volume that holds the merged RDS (input) and where
+# downloaded results land. Used by export_stratum_phenotype.R.
+export DATA_ROOT="/path/to/data_root"

@@ -1,0 +1,13 @@
+# Runtime artefacts — never committed.
+data/
+output/
+logs/
+*.log
+
+# Per-user secrets (cluster login, local paths). Regenerate via
+# _bootstrap_user_config.sh.
+user_config.sh
+
+# rsync sentinels & macOS noise.
+transfer_*.completed
+.DS_Store
