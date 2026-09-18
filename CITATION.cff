@@ -5,7 +5,7 @@ abstract: "Analysis pipeline for a gene-by-environment study of educational atta
 type: software
 license: MIT
 version: "1.0-preprint"
-repository-code: "https://github.com/denizFraemke/GxE-education-germany"
+repository-code: "https://github.com/Biosocial/GxE-education-germany"
 # ---------------------------------------------------------------------------
 # PLACEHOLDER — NO PREPRINT DOI HAS BEEN ISSUED YET.
 # The block below is deliberately commented out so that no invalid DOI can be
