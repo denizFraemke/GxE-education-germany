@@ -152,7 +152,7 @@ Biroli, P., Fuchs-Schündeln, N., Harden, K. P., Abdellaoui, A., Malanchini, M.,
 Tucker-Drob, E. M., & Raffington, L. *Analysis code for: Genomics of
 Educational Attainment Across 80 Years of Social and Political Transformation
 in Germany* (Version 1.0-preprint) [Computer software].
-https://github.com/denizFraemke/GxE-education-germany
+https://github.com/Biosocial/GxE-education-germany
 
 The preprint DOI is not yet issued. [`CITATION.cff`](CITATION.cff) carries the
 same byline in machine-readable form, with a commented-out `identifiers:` block
